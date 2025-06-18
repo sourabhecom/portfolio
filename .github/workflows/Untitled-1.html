@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sourabh | E-commerce Executive</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #000;
+      color: #FFD700;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #000;
+      z-index: 50;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+    }
+    nav a {
+      color: #FFD700;
+      margin-left: 1.5rem;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    .golden-glow {
+      text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFA500;
+    }
+    .card-container {
+      perspective: 1000px;
+      height: 200px;
+    }
+    .flip-card {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+    .card:hover .flip-card {
+      transform: rotateY(180deg);
+    }
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    .flip-card-front {
+      background: linear-gradient(145deg, rgba(255,255,255,0.07), rgba(255,215,0,0.15));
+      color: #FFD700;
+      box-shadow: 0 4px 30px rgba(255, 215, 0, 0.1);
+    }
+    .flip-card-back {
+      background: linear-gradient(145deg, rgba(255,215,0,0.15), rgba(255,255,255,0.07));
+      color: #fff;
+      transform: rotateY(180deg);
+      box-shadow: 0 4px 30px rgba(255, 215, 0, 0.2);
+    }
+    section {
+      padding-top: 5rem;
+    }
+  </style>
+</head>
+<body class="overflow-x-hidden">
+
+  <!-- Navbar -->
+  <nav>
+    <div class="text-xl font-bold text-yellow-400">Sourabh</div>
+    <div>
+      <a href="#hero">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#platforms">Platforms</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="min-h-screen grid grid-cols-1 md:grid-cols-2 gap-4 p-6 md:p-16 items-center">
+    <div>
+      <h1 class="text-5xl md:text-6xl font-bold golden-glow">Hi, I'm Sourabh</h1>
+      <p class="mt-4 text-xl md:text-2xl text-gray-300">E-Commerce Executive | SEO Expert | Amazon Specialist</p>
+      <p class="mt-6 text-gray-400">2+ years of experience in managing listings, optimizing product content, and driving marketplace performance across platforms like Amazon, Flipkart, and Meesho.</p>
+      <div class="mt-8 space-x-4">
+        <button class="bg-yellow-500 text-black px-6 py-2 rounded-full shadow-lg hover:bg-yellow-600 transition">Download Resume</button>
+        <button class="border border-yellow-500 text-yellow-500 px-6 py-2 rounded-full hover:bg-yellow-500 hover:text-black transition">Contact</button>
+      </div>
+    </div>
+    <div class="relative">
+      <div class="w-full h-80 md:h-[28rem] bg-yellow-500 rounded-xl overflow-hidden shadow-xl animate-pulse">
+        <p class="text-black flex items-center justify-center h-full text-lg font-semibold">[Your Media Placeholder]</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Grid Section -->
+  <section id="skills" class="p-6 md:p-16 bg-black">
+    <h2 class="text-3xl font-bold text-center golden-glow mb-10">My Key Skills</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="card card-container">
+        <div class="flip-card">
+          <div class="flip-card-front">Bulk Listings</div>
+          <div class="flip-card-back">Upload thousands of SKUs via Excel, CSV, or APIs efficiently.</div>
+        </div>
+      </div>
+      <div class="card card-container">
+        <div class="flip-card">
+          <div class="flip-card-front">Order Management</div>
+          <div class="flip-card-back">Seamless handling of orders, tracking, and return logistics.</div>
+        </div>
+      </div>
+      <div class="card card-container">
+        <div class="flip-card">
+          <div class="flip-card-front">SEO Optimization</div>
+          <div class="flip-card-back">Boosting discoverability via title, description & keyword tuning.</div>
+        </div>
+      </div>
+      <div class="card card-container">
+        <div class="flip-card">
+          <div class="flip-card-front">Amazon A+ Content</div>
+          <div class="flip-card-back">Custom rich media to elevate brand story & increase conversions.</div>
+        </div>
+      </div>
+      <div class="card card-container">
+        <div class="flip-card">
+          <div class="flip-card-front">MS Excel</div>
+          <div class="flip-card-back">Expert in VLOOKUP, pivot tables, filters & reporting dashboards.</div>
+        </div>
+      </div>
+      <div class="card card-container">
+        <div class="flip-card">
+          <div class="flip-card-front">HTML/CSS</div>
+          <div class="flip-card-back">Edit or embed code in product pages for better UI/UX.</div>
+        </div>
+      </div>
+      <div class="card card-container">
+        <div class="flip-card">
+          <div class="flip-card-front">Google Sheets</div>
+          <div class="flip-card-back">Cloud-based automation and collaborative data tools.</div>
+        </div>
+      </div>
+      <div class="card card-container">
+        <div class="flip-card">
+          <div class="flip-card-front">AI Tools</div>
+          <div class="flip-card-back">Product content creation and insights using AI software.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Platforms Worked With Section -->
+  <section id="platforms" class="p-6 md:p-16 bg-black">
+    <h2 class="text-3xl font-bold text-center golden-glow mb-10">Platforms I've Worked On</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 justify-items-center">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" class="h-12 hover:scale-110 transform transition duration-300" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Flipkart_logo.png" alt="Flipkart" class="h-12 hover:scale-110 transform transition duration-300" />
+      <img src="https://assets.meesho.com/images/marketing/1661417516766.webp" alt="Meesho" class="h-12 rounded hover:scale-110 transform transition duration-300" />
+      <img src="https://yt3.googleusercontent.com/ytc/AIdro_mCgBG3zh_fV7Ag9Y2G4f-68tBUn8z2Z7nPdkQU=s900-c-k-c0x00ffffff-no-rj" alt="Dusaan" class="h-12 rounded hover:scale-110 transform transition duration-300" />
+      <img src="https://seeklogo.com/images/G/glowroad-logo-524F70AD87-seeklogo.com.png" alt="Glowroad" class="h-12 hover:scale-110 transform transition duration-300" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/JioMart_logo.png" alt="JioMart" class="h-12 hover:scale-110 transform transition duration-300" />
+      <img src="https://cdn.shopify.com/assets/images/logos/shopify-bag.png" alt="Shopify" class="h-12 hover:scale-110 transform transition duration-300" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Amazon.com_logo.svg" alt="Amazon.com" class="h-12 hover:scale-110 transform transition duration-300" />
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="p-6 md:p-16 bg-black">
+    <h2 class="text-3xl font-bold text-center golden-glow mb-10">Projects</h2>
+    <div class="text-gray-300 text-center">Coming Soon: Project case studies showcasing SEO impact, bulk upload success & dashboard automation.</div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="p-6 md:p-16 bg-black">
+    <h2 class="text-3xl font-bold text-center golden-glow mb-10">Contact Me</h2>
+    <div class="text-center text-gray-300">
+      <p>Email: <a href="mailto:SourabhEcom01@gamil.com" class="underline hover:text-yellow-400">SourabhEcom01@gamil.com</a></p>
+      <p>Phone: 798 259 3216</p>
+      <p>Location: Shalimar Bagh, Delhi</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center p-6 text-gray-400">
+    © 2025 Sourabh | Designed with ✨ by ChatGPT
+  </footer>
+
+</body>
+</html>
